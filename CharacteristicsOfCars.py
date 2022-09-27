@@ -15,3 +15,10 @@ class Bmw:
         print('поехали!')
         self.engine_rpm = 2000
         self.current_velocity = 20
+
+    def travel(self, city, country):
+        print('we travelled to the ', city, country)
+
+
+
+

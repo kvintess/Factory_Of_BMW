@@ -17,4 +17,14 @@ print(my_car.current_velocity, 'км в час после разгона')
 
 my_car.error_attribute = 'я хочу удалить этот аттрибут'
 del my_car.error_attribute
-print(my_car.error_attribute)
+
+#установим новые attr для нашей машины с помощью цикла
+new_attributes= ['weight','height']
+for new_attr in new_attributes:
+    setattr(my_car, new_attr, '3meters')
+print(my_car.weight)
+print(getattr(my_car, "height"))
+
+#поедем в другую страну в какой-либо город
+my_car.travel('Лондон', 'Англия')
+
